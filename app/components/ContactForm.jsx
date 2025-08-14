@@ -24,7 +24,6 @@ export default function ContactForm() {
   const onSubmit = (ev) => {
     ev.preventDefault();
     if (!validate()) return;
-    // simulate submission
     setTimeout(() => {
       setSubmitted(true);
       setName("");

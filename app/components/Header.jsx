@@ -25,7 +25,7 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="h-16 flex items-center justify-between">
           <Link href="#hero" className="font-semibold text-lg tracking-tight">
-            Meta
+            15hundred
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -57,7 +57,7 @@ export default function Header() {
             className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-black/10 dark:border-white/15"
             onClick={() => setOpen((v) => !v)}
           >
-            <span className="i-[]">{/* icon placeholder */}
+            <span className="i-[]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 {open ? (
                   <path d="M18 6 6 18M6 6l12 12" />
@@ -73,8 +73,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t border-black/10 dark:border-white/15 bg-background">
           <div className="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3">
