@@ -40,7 +40,7 @@ export default function ContactForm() {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full h-11 px-3 rounded-md border border-black/10 dark:border-white/15 bg-transparent outline-none focus:ring-2 focus:ring-foreground/30"
+          className="w-full h-11 px-3 rounded-md border border-black/10 dark:border-white/15 bg-black/5 outline-none focus:ring-2 focus:ring-foreground/30"
           placeholder={t("form.name.placeholder")}
         />
         {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
@@ -52,7 +52,7 @@ export default function ContactForm() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full h-11 px-3 rounded-md border border-black/10 dark:border-white/15 bg-transparent outline-none focus:ring-2 focus:ring-foreground/30"
+          className="w-full h-11 px-3 rounded-md border border-black/10 dark:border-white/15 bg-black/5 outline-none focus:ring-2 focus:ring-foreground/30"
           placeholder={t("form.email.placeholder")}
         />
         {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
@@ -63,7 +63,7 @@ export default function ContactForm() {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full min-h-28 px-3 py-2 rounded-md border border-black/10 dark:border-white/15 bg-transparent outline-none focus:ring-2 focus:ring-foreground/30"
+          className="w-full min-h-28 px-3 py-2 rounded-md border border-black/10 dark:border-white/15 bg-black/5 outline-none focus:ring-2 focus:ring-foreground/30"
           placeholder={t("form.message.placeholder")}
         />
         {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}

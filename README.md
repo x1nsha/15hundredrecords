@@ -52,7 +52,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - Отзывы/Testimonials (id="testimonials")
   - Контакты/Contact (id="contact")
 - Форма обратной связи (app/components/ContactForm.jsx) с простой валидацией.
-- Плейсхолдеры иконок в public/ (next.svg, vercel.svg, globe.svg, file.svg, window.svg).
+- Плейсхолдеры иконок в public/ (globe.svg, file.svg, window.svg).
 
 ## Как запустить
 ```bash

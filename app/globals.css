@@ -8,8 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans, ui-sans-serif);
-  --font-mono: var(--font-geist-mono, ui-monospace);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,13 +17,50 @@
   }
 }
 
+/* Manual theme override via class */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+html.light {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 html { scroll-behavior: smooth; }
 
-/* Ensure in-page anchors account for fixed header height */
 [id] { scroll-margin-top: 5rem; }
+
+/* Splash intro animation */
+@keyframes splash-in {
+  0% { opacity: 0; transform: scale(0.85); }
+  70% { opacity: 1; transform: scale(1.06); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.splash-logo {
+  animation: splash-in 900ms ease-out forwards;
+}
+
+/* Splash exit + overlay animations */
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes overlay-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.splash-overlay { animation: overlay-in 200ms ease-out both; }
+.splash-overlay.closing { animation: overlay-out 400ms ease-in forwards; }
+
+@keyframes splash-out {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.92); }
+}
+.splash-logo-out { animation: splash-out 350ms ease-in forwards; }
