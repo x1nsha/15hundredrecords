@@ -23,12 +23,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-black/10 dark:border-white/15 bg-background">
+    <footer className="border-t border-brand-200 dark:border-brand-800 bg-background">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm opacity-70">© {new Date().getFullYear()} || 15hundred Records. {t("footer.rights")}</p>
         <div className="flex items-center gap-3 text-foreground/80">
           <a
-            href="#tiktok"
+            href="https://www.tiktok.com/@15hundredrecords"
             aria-label="TikTok"
             title="TikTok"
             target="_blank"

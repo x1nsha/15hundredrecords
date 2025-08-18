@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Splash />
         <I18nProvider>
           <Header />
-          <main className="pt-16">{children}</main>
+            <main className="pt-16">{children}</main>
           <Footer />
         </I18nProvider>
       </body>
