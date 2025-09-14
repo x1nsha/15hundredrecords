@@ -8,7 +8,6 @@ export default function Header() {
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const { t, lang, setLang } = useI18n();
-
     const [theme, setTheme] = useState(null);
     const [isChangingTheme, setIsChangingTheme] = useState(false);
     const [isChangingLang, setIsChangingLang] = useState(false);
@@ -62,11 +61,16 @@ export default function Header() {
             isScrolled ? "bg-background/80 backdrop-blur-md border-b border-black/10 dark:border-white/15" : ""
         }`}>
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
-                <div className="h-16 flex items-center justify-between">
-                    <Link href="#hero" className="flex items-center">
+                <div className="h-16 flex items-center justify-between relative">
+                    <Link href="/dashboard" className="flex items-center gap-3">
                         <img src="/icon.png" alt="icon" className="h-20 w-15 rounded-md object-cover" />
                         <span className="sr-only">15hundred</span>
                     </Link>
+
+                    <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
+                        <a href="/dashboard" className="text-sm hover:text-brand-500 transition-colors">{t("dashboard.title")}</a>
+                        <a href="/contact" className="text-sm hover:text-brand-500 transition-colors">{t("nav.contacts")}</a>
+                    </nav>
 
                     <nav className="hidden md:flex items-center gap-6">
                         <button
@@ -153,7 +157,14 @@ export default function Header() {
                 <div className="md:hidden border-t border-black/10 dark:border-white/15 bg-background transition-all duration-300">
                     <div className="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3">
                         <a
-                            href="#contact"
+                            href="/dashboard"
+                            onClick={close}
+                            className="py-2 text-base transition-colors hover:text-brand-500"
+                        >
+                            {t("dashboard.title")}
+                        </a>
+                        <a
+                            href="/contact"
                             onClick={close}
                             className="py-2 text-base transition-colors hover:text-brand-500"
                         >
