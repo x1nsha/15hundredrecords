@@ -38,9 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ---
 
-# Meta — Next.js Scaffold (App Router)
+# 15hundred records — Next.js Scaffold (App Router)
 
-Этот проект реализует каркас сайта по макету «Meta» (ссылка из задачи) с использованием только Next.js (App Router) и Tailwind CSS v4. В репозитории настроены общие разделы, навигация, базовые интерактивные элементы и форма обратной связи для дальнейшей шлифовки под пиксель‑перфект специфику из Figma.
+Этот проект реализует каркас лейбла с использованием только Next.js (App Router) и Tailwind CSS v4. В репозитории настроены общие разделы, навигация, базовые интерактивные элементы и форма обратной связи для дальнейшей шлифовки под пиксель‑перфект специфику из Figma.
 
 ## Что реализовано
 - Глобальный макет (app/layout.jsx) с фиксированной шапкой и подвалом.
@@ -51,20 +51,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - Галерея/Showcase (id="showcase")
   - Отзывы/Testimonials (id="testimonials")
   - Контакты/Contact (id="contact")
-- Форма обратной связи (app/components/ContactForm.jsx) с простой валидацией.
 - Плейсхолдеры иконок в public/ (globe.svg, file.svg, window.svg).
-
-## Как запустить
-```bash
-npm run dev
-# затем откройте http://localhost:3000
-```
-
-## Сборка
-```bash
-npm run build
-npm start
-```
 
 ## Точки кастомизации под Figma
 - Секция Hero, палитра, типографика: править классы в app/page.jsx и переменные в app/globals.css.

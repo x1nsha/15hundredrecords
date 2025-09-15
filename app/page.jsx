@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <div className="font-sans">
-      <section id="hero" className="bg-gradient-to-b from-brand-50 to-background">
+      <section id="hero" className="bg-gradient-to-b from-brand-50 to-background border-b border-black/10 dark:border-white/15">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">{t("hero.title")}</h1>

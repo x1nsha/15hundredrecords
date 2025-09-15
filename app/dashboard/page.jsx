@@ -40,7 +40,7 @@ export default function Dashboard() {
 
   return (
     <div className="font-sans">
-      <section className="bg-gradient-to-b from-brand-50 to-background border-b border-black/10 dark:border-white/15">
+      <section className="bg-gradient-to-b from-brand-50 to-background">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">

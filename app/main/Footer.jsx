@@ -1,6 +1,6 @@
 "use client";
 
-import { useI18n } from "./I18nProvider";
+import { useI18n } from "../components/I18nProvider";
 import { useEffect, useState } from "react";
 
 export default function Footer() {

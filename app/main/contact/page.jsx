@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useI18n } from "../components/I18nProvider";
+import { useI18n } from "../../components/I18nProvider";
 
 const MAX_SIZE = 25 * 1024 * 1024
 const ACCEPTED_MIME = [

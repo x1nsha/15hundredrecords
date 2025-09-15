@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { useI18n } from "./I18nProvider";
+import { useI18n } from "../components/I18nProvider";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
