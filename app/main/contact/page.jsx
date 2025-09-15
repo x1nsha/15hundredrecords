@@ -50,7 +50,7 @@ export default function ContactPage() {
       fd.set("message", message);
       if (file) fd.set("file", file, file.name);
 
-      const res = await fetch("/api/contact", { method: "POST", body: fd });
+      const res = await fetch("/main/contact/api", { method: "POST", body: fd });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
         throw new Error(data?.error || `HTTP ${res.status}`);

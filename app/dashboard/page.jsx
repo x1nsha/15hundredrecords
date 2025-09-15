@@ -55,7 +55,7 @@ export default function Dashboard() {
               ) : null}
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Link href="/?stay=1#hero" className="inline-flex items-center h-11 px-5 rounded-full border border-black/10 dark:border-white/15 bg-black/5 hover:bg-black/10 text-sm">
+              <Link href="/main" className="inline-flex items-center h-11 px-5 rounded-full border border-black/10 dark:border-white/15 bg-black/5 hover:bg-black/10 text-sm">
                 {t("dashboard.gotoLanding")}
               </Link>
             </div>

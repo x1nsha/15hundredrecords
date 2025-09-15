@@ -69,7 +69,7 @@ export default function Header() {
 
                     <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
                         <a href="/dashboard" className="text-sm hover:text-brand-500 transition-colors">{t("dashboard.title")}</a>
-                        <a href="/contact" className="text-sm hover:text-brand-500 transition-colors">{t("nav.contacts")}</a>
+                        <a href="/main/contact" className="text-sm hover:text-brand-500 transition-colors">{t("nav.contacts")}</a>
                     </nav>
 
                     <nav className="hidden md:flex items-center gap-6">
@@ -164,7 +164,7 @@ export default function Header() {
                             {t("dashboard.title")}
                         </a>
                         <a
-                            href="/contact"
+                            href="/main/contact"
                             onClick={close}
                             className="py-2 text-base transition-colors hover:text-brand-500"
                         >
